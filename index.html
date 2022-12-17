@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = header>Etch a sketch</h1>
+    <main class = "mainArea">
+        <div class = "gameContainer">
+        
+            <div class = board></div>
+            <div class = Buttons>
+                <button onclick="changeColor('black')" class = 'topButtons'>Black</button>
+                <button onclick="changeColor('blue')" class = 'topButtons'>Blue</button>
+                <button onclick="changeColor('yellow')" class = 'topButtons'>Yellow</button>
+                <button onclick="changeColor('white')" class = 'topButtons'>erase</button>
+                <button onclick="resetBoard()" class = 'topButtons'>Reset</button>
+            </div>
+            <div class = "inputArea">
+                <input id = "inputField" type = "text" placeHolder = "hello" value = "16" onchange = changeSize(this.value)>
+                <button id = "setSizeButton">Set size</button>
+            </div>
+        </div>
+    </main>
+
+    
+</body>
+<script type = "text/javascript" src = "app.js"></script>
+</html>
